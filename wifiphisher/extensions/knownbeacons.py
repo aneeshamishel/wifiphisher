@@ -49,7 +49,7 @@ class Knownbeacons(object):
         """
 
         beacons = list()
-        essid = str()
+        
         bssid = self.data.rogue_ap_mac
 
         # locate the known WLANS file
