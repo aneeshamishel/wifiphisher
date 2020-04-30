@@ -866,7 +866,7 @@ def is_managed_by_network_manager(interface_name):
         stderr=PIPE)
         out, err = nmcli_process.communicate()
 
-        if err == None and out != "":
+        if err is None and out != "":
             for l in out.splitlines():
                 #TODO: If the device is managed and user has nmcli installed,
                 # we can probably do a "nmcli dev set wlan0 managed no"
